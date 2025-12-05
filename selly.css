@@ -1,0 +1,188 @@
+.selly-hidden {
+  display: none;
+}
+
+/* Popup unten rechts */
+#selly-popup {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+}
+
+.selly-popup-box {
+  background: #ffffff;
+  border-radius: 14px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+  padding: 12px 14px;
+  max-width: 280px;
+  border: 1px solid #e6e6e6;
+  animation: selly-slide-in 0.3s ease-out;
+}
+
+.selly-popup-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 6px;
+}
+
+.selly-avatar {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #4f46e5, #6366f1);
+  color: #fff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.selly-name {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+#selly-popup-text {
+  font-size: 13px;
+  margin: 0 0 8px 0;
+}
+
+.selly-popup-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+}
+
+.selly-popup-actions button {
+  border-radius: 999px;
+  border: none;
+  padding: 6px 10px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+#selly-btn-yes {
+  background: #4f46e5;
+  color: #fff;
+}
+
+#selly-btn-no {
+  background: #f3f4f6;
+  color: #374151;
+}
+
+/* Chat-Widget */
+#selly-chat {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 10000;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+}
+
+.selly-chat-box {
+  width: 320px;
+  max-height: 480px;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.18);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border: 1px solid #e5e7eb;
+}
+
+.selly-chat-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 12px;
+  border-bottom: 1px solid #e5e7eb;
+  background: linear-gradient(135deg, #4f46e5, #6366f1);
+  color: #fff;
+}
+
+.selly-subtitle {
+  font-size: 11px;
+  opacity: 0.9;
+}
+
+.selly-close-btn {
+  margin-left: auto;
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.selly-chat-messages {
+  flex: 1;
+  padding: 10px;
+  overflow-y: auto;
+  font-size: 13px;
+  background: #f9fafb;
+}
+
+.selly-msg {
+  max-width: 80%;
+  padding: 8px 10px;
+  margin-bottom: 8px;
+  border-radius: 12px;
+  line-height: 1.4;
+}
+
+.selly-msg-selly {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  align-self: flex-start;
+}
+
+.selly-msg-user {
+  background: #4f46e5;
+  color: #fff;
+  align-self: flex-end;
+}
+
+.selly-chat-input-row {
+  display: flex;
+  border-top: 1px solid #e5e7eb;
+  padding: 8px;
+  gap: 6px;
+  background: #fff;
+}
+
+#selly-chat-input {
+  flex: 1;
+  border-radius: 999px;
+  border: 1px solid #d1d5db;
+  padding: 6px 10px;
+  font-size: 13px;
+}
+
+#selly-chat-send {
+  border-radius: 999px;
+  border: none;
+  padding: 6px 10px;
+  font-size: 13px;
+  background: #4f46e5;
+  color: #fff;
+  cursor: pointer;
+}
+
+@keyframes selly-slide-in {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}

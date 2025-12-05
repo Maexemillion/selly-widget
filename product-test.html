@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <title>SellMate / Selly Test</title>
+    <link rel="stylesheet" href="selly.css" />
+  </head>
+  <body>
+    <!-- Dein Produktbereich -->
+    <div
+      id="product"
+      data-product-id="12345"
+      data-product-name="Oversized Hoodie"
+      data-product-category="Hoodie"
+      data-product-material="80% Baumwolle, 20% Polyester"
+      data-product-fit="oversized"
+    >
+      <h1>Oversized Hoodie</h1>
+      <p>Ein lässiger Hoodie für jeden Tag.</p>
+      <p>Material: 80% Baumwolle, 20% Polyester</p>
+    </div>
+
+    <!-- Selly Popup (Frage) -->
+    <div id="selly-popup" class="selly-hidden">
+      <div class="selly-popup-box">
+        <div class="selly-popup-header">
+          <span class="selly-avatar">S</span>
+          <span class="selly-name">Selly</span>
+        </div>
+        <p id="selly-popup-text">
+          Hey, ich bin Selly 👋 Hast du Fragen zu diesem Produkt?
+        </p>
+        <div class="selly-popup-actions">
+          <button id="selly-btn-yes">Ja, gerne</button>
+          <button id="selly-btn-no">Nein, später</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Selly Chat Widget -->
+    <div id="selly-chat" class="selly-hidden">
+      <div class="selly-chat-box">
+        <div class="selly-chat-header">
+          <div class="selly-avatar">S</div>
+          <div>
+            <div class="selly-name">Selly</div>
+            <div class="selly-subtitle">Deine Einkaufsberaterin</div>
+          </div>
+          <button id="selly-chat-close" class="selly-close-btn">×</button>
+        </div>
+
+        <div id="selly-chat-messages" class="selly-chat-messages"></div>
+
+        <div class="selly-chat-input-row">
+          <input
+            type="text"
+            id="selly-chat-input"
+            placeholder="Frag mich etwas zum Produkt…"
+          />
+          <button id="selly-chat-send">Senden</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="selly.js"></script>
+  </body>
+</html>
