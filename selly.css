@@ -198,3 +198,19 @@
     opacity: 1;
   }
 }
+
+@media (prefers-color-scheme: dark) {
+  .logo-img {
+    content: url("assets/sellmate_logo_dark.svg");
+  }
+
+  body, header, .sm-hero {
+    background: #0B0D12;
+    color: #FFFFFF;
+  }
+
+  .cta-main, .cta-header {
+    background: #1A73E8;
+    color: #FFFFFF;
+  }
+}
