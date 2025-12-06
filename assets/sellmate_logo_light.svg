@@ -1,0 +1,7 @@
+<svg width="220" height="72" viewBox="0 0 220 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g transform="translate(0,6) scale(0.9)">
+<path d="M20 34L28.5 26C30.5 24.2 33.5 24.2 35.5 26L44 34M21.5 40.5L29.2 33.3C31.1 31.6 34.1 31.6 36 33.3L43.5 40.5" stroke="#0B0D12" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"></path>
+<path d="M20 34V39C20 41 21.5 42.5 23.5 42.5H26M44 34V39C44 41 42.5 42.5 40.5 42.5H38" stroke="#1A73E8" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"></path>
+</g>
+<text x="88" y="48" font-family="'Space Grotesk', sans-serif" font-size="32" font-weight="700" fill="#0B0D12">SellMate</text>
+</svg>
