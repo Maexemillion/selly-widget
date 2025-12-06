@@ -33,13 +33,23 @@
   width: 26px;
   height: 26px;
   border-radius: 50%;
-  background: linear-gradient(135deg, #4f46e5, #6366f1);
-  color: #fff;
+  background: #0B0D12; /* dunkler Kreis */
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  font-weight: 600;
-  font-size: 14px;
+  overflow: hidden;
+  font-size: 0; /* Text wie "S" unsichtbar machen */
+}
+
+.selly-avatar::before {
+  content: "";
+  width: 18px;
+  height: 18px;
+  background-image: url("https://maexemillion.github.io/selly-widget/assets/sellmate_icon.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: block;
 }
 
 .selly-name {
