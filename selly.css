@@ -158,6 +158,18 @@
   background: #fff;
 }
 
+.logo-img {
+  height: 32px;
+  display: block;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+
 #selly-chat-input {
   flex: 1;
   border-radius: 999px;
